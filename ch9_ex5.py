@@ -13,6 +13,8 @@ for line in fhand:
     words = line.split()
     if len(words) == 0 or len(words) < 1 or words[0] != 'From': continue
     words[1] = words[1].split('@')[-1]
+    #atpos = words[1].find('@')               #position of the @ character
+    #domain = words[1][atpos+1:]              #stores the characters after the @
     if words[1] not in eaddr:
         eaddr[words[1]] = 1
     else:
