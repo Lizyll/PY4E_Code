@@ -14,3 +14,4 @@ lst = sorted(lst, reverse = True)
 
 for val, key in lst[:10] :
     print(key, val)
+#print( sorted( [ (v, k) for k, v in count.items() ] )[:10] )
