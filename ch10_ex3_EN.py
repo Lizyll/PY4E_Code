@@ -18,7 +18,7 @@ for line in fhand:
 
 lst = list()
 for word, count in letters.items():
-    lst.append((word, count))
+    lst.append((count, word))
 lst.sort(reverse = True)
-for word, count in lst:
+for count, word in lst:
     print(word, count)
