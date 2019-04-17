@@ -1,8 +1,8 @@
 import socket
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mysock.connect(('data.pr4e.org', 80))
-cmd = 'GET https://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+mysock.connect(('baidu.com', 80))
+cmd = 'GET https://www.baidu.com/robots.txt HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:
