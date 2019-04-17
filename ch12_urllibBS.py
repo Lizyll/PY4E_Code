@@ -9,4 +9,7 @@ soup = BeautifulSoup(html, 'html.parser')
 #retrieve all of the anchor tags
 tags = soup('a')
 for tag in tags:
-    print(tag.get('href', None))
+    print('Tag:', tag)
+    print('URL:', tag.get('href', None))
+    print('Contents:', tag.contents[0])
+    print('Attrs:', tag.attrs)
